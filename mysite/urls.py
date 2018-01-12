@@ -20,6 +20,12 @@ from django.urls import include, path
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('blog.urls')),
+    # url(r'^$', include('blog.urls')), #Same thing as above
 ]
 
 
+
+# url(r'^detailspg/(?P<id>\d+)/$', views.index, name='index')
+# ?P = parameter 
+# id = database id to match the url pages
+# d = digit ; plus one means that it shoud be at least one or more digits
