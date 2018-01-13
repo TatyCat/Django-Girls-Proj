@@ -11,7 +11,8 @@ def post_list(request):
     context = {
         'title':'Latest Posts',
         'posts':post
-    } then pass in render instead of the current dictionary'''
+    } then pass in render instead of the current dictionary
+    '''
     return render(request, 'blog/post_list.html', {'posts':posts})
 
 def post_detail(request,pk):
