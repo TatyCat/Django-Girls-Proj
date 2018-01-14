@@ -64,7 +64,7 @@ Most of the time you will use form.save() without commit=False
 
 def details(request,id):
     post = Posts.objects.get(id=id)
-    contexxt = {
+    context = {
         'post':post
     }
     return render(request, 'posts/details.html', context)
